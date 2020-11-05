@@ -1,0 +1,17 @@
+body {
+    background: #D0C7B8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+    'header         header          header'
+    'who            who             who'
+    'main           main            main'
+    'footer         footer          footer';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    min-width: 20%;
+}

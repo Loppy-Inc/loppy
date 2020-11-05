@@ -1,0 +1,440 @@
+body {
+  background: #D0C7B8;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
+.layout {
+  display: grid;
+  grid-template-areas: 'header         header          header' 'who            who             who' 'main           main            main' 'footer         footer          footer';
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  min-width: 20%; }
+
+header {
+  background: #3C5166;
+  display: flex;
+  flex-direction: row;
+  grid-area: header; }
+  header a {
+    color: white;
+    display: block;
+    font-size: 1.25em;
+    padding: 0 0.9375rem;
+    text-decoration: none; }
+  header .loppy-logo {
+    margin: 0.625em 3.75em; }
+    header .loppy-logo img {
+      width: 8.75em; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.625em auto;
+    padding: 1.875em; }
+    header nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    header nav li {
+      margin: 0 1.25em;
+      padding: 0; }
+      header nav li a:hover {
+        color: rgba(255, 255, 255, 0.8); }
+      header nav li a .chevron-down {
+        margin: 0 0.3125em;
+        font-size: 0.9375rem; }
+    header nav > ul {
+      display: flex;
+      flex-direction: row; }
+    header nav li ul {
+      border-top: 3px solid #D0C7B8;
+      display: none;
+      position: absolute; }
+    header nav li:hover > ul {
+      background: #3C5166;
+      box-shadow: 3px 3px 2px rgba(20, 22, 24, 0.85);
+      display: block;
+      text-align: center; }
+      header nav li:hover > ul li {
+        margin: 0 0.625em; }
+        header nav li:hover > ul li a {
+          font-size: 1em;
+          padding: 0.9375rem 0; }
+    header nav li:hover .chevron-down {
+      transform: rotate(180deg);
+      transition: .3s ease;
+      text-decoration: none; }
+  header .login {
+    margin: 0.625em 0;
+    padding: 1.875em; }
+    header .login a .user-icon {
+      margin: 0 0.3125em;
+      font-size: 0.9375em; }
+  header .r-login {
+    display: none;
+    margin: 0.625em 1em;
+    padding: 0.625em 0; }
+    header .r-login .r-user-icon {
+      color: white;
+      font-size: 3rem; }
+  header .menu {
+    display: none;
+    margin: 0.625em 1em;
+    padding: 0.625em 0; }
+    header .menu .menuButton {
+      color: white;
+      font-size: 3rem; }
+
+.who {
+  background: #748C98;
+  grid-area: who; }
+  .who article {
+    margin: 1.25em;
+    padding: 1em;
+    text-align: center; }
+    .who article h2 {
+      color: white;
+      font-size: 2.5em; }
+    .who article p {
+      color: white;
+      font-size: 1.5em;
+      font-weight: 500;
+      padding: 0 12em; }
+
+main {
+  grid-area: main; }
+  main .proposals {
+    margin: 5em;
+    overflow: hidden; }
+    main .proposals .mision {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      margin: 3em 0;
+      float: right;
+      padding: 3em;
+      text-align: center;
+      width: 50%; }
+      main .proposals .mision h3 {
+        font-size: 3em;
+        font-weight: 400; }
+      main .proposals .mision p {
+        font-size: 1.5em; }
+    main .proposals .vision {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      margin: 3em 0;
+      float: left;
+      padding: 3em;
+      text-align: center;
+      width: 50%; }
+      main .proposals .vision h3 {
+        font-size: 3em;
+        font-weight: 400; }
+      main .proposals .vision p {
+        font-size: 1.5em; }
+
+footer {
+  background: #3C5166;
+  grid-area: footer; }
+  footer .line {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5em; }
+    footer .line .about-us h3 {
+      color: #C3C3C3;
+      font-weight: 300;
+      margin: 1.25em 2.5em; }
+    footer .line .about-us ul {
+      list-style: none; }
+      footer .line .about-us ul li {
+        padding: 0.625em 0; }
+        footer .line .about-us ul li a {
+          color: white;
+          font-weight: 300;
+          text-decoration: none; }
+    footer .line section {
+      margin: 0 3.125em; }
+      footer .line section h3 {
+        color: white;
+        font-size: 2em; }
+      footer .line section .social-networks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        footer .line section .social-networks .facebook {
+          background: #2A3847;
+          border-radius: 0.3125em;
+          margin: 0 1.25em;
+          padding: 0.625em 3.125em; }
+          footer .line section .social-networks .facebook .network-icon {
+            color: white;
+            font-size: 2em; }
+        footer .line section .social-networks .twitter {
+          background: #2A3847;
+          border-radius: 0.3125em;
+          margin: 0 1.25em;
+          padding: 0.625em 3.125em; }
+          footer .line section .social-networks .twitter .network-icon {
+            color: white;
+            font-size: 2em; }
+        footer .line section .social-networks .youtube {
+          background: #2A3847;
+          border-radius: 0.3125em;
+          margin: 0 1.25em;
+          padding: 0.625em 3.125em; }
+          footer .line section .social-networks .youtube .network-icon {
+            color: white;
+            font-size: 2em; }
+        footer .line section .social-networks .instagram {
+          background: #2A3847;
+          border-radius: 0.3125em;
+          margin: 0 1.25em;
+          padding: 0.625em 3.125em; }
+          footer .line section .social-networks .instagram .network-icon {
+            color: white;
+            font-size: 2em; }
+
+@media (max-width: 1265px) {
+  body {
+    font-size: 14px; } }
+
+@media (max-width: 1053px) {
+  body {
+    font-size: 12px; }
+    body .layout {
+      grid-template-areas: 'header         header          header' 'who            who             who' 'main           main            main' 'footer         footer          footer'; }
+      body .layout footer .line {
+        flex-flow: column-reverse; }
+        body .layout footer .line .about-us {
+          margin: 0 auto; }
+          body .layout footer .line .about-us h3 {
+            font-weight: 500;
+            text-align: center; }
+          body .layout footer .line .about-us ul {
+            display: flex;
+            flex-direction: row;
+            padding: 0; }
+            body .layout footer .line .about-us ul li {
+              padding: 0 1.25em; }
+        body .layout footer .line section .social-networks {
+          margin: 0 auto; } }
+
+@media (max-width: 932px) {
+  body {
+    font-size: 10px; }
+    body .layout header {
+      justify-content: space-between; }
+      body .layout header .loppy-logo {
+        margin: 1em 0; }
+        body .layout header .loppy-logo img {
+          width: 8.75em; }
+      body .layout header nav {
+        background: #3C5166;
+        display: none;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        width: 50%; }
+        body .layout header nav li {
+          margin: 1.5em; }
+          body .layout header nav li a i {
+            display: none; }
+        body .layout header nav > ul {
+          flex-direction: column;
+          width: 100%; }
+          body .layout header nav > ul > li {
+            padding: 1em; }
+          body .layout header nav > ul > li:hover {
+            background: rgba(20, 22, 24, 0.6); }
+      body .layout header .login {
+        display: none; }
+      body .layout header .responsive-cont {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        body .layout header .responsive-cont .r-login {
+          display: initial; }
+          body .layout header .responsive-cont .r-login .r-user-icon {
+            color: white;
+            font-size: 3rem; }
+        body .layout header .responsive-cont .menu {
+          display: initial; }
+          body .layout header .responsive-cont .menu .menuButton {
+            color: white;
+            font-size: 3rem; }
+    body .layout footer .line section .social-networks {
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      body .layout footer .line section .social-networks .facebook {
+        background: #2A3847;
+        border-radius: 0.3125em;
+        margin: 1em;
+        padding: 0.625em 3.125em; }
+        body .layout footer .line section .social-networks .facebook .network-icon {
+          color: white;
+          font-size: 2em; }
+      body .layout footer .line section .social-networks .twitter {
+        background: #2A3847;
+        border-radius: 0.3125em;
+        margin: 1em;
+        padding: 0.625em 3.125em; }
+        body .layout footer .line section .social-networks .twitter .network-icon {
+          color: white;
+          font-size: 2em; }
+      body .layout footer .line section .social-networks .youtube {
+        background: #2A3847;
+        border-radius: 0.3125em;
+        margin: 1em;
+        padding: 0.625em 3.125em; }
+        body .layout footer .line section .social-networks .youtube .network-icon {
+          color: white;
+          font-size: 2em; }
+      body .layout footer .line section .social-networks .instagram {
+        background: #2A3847;
+        border-radius: 0.3125em;
+        margin: 1em;
+        padding: 0.625em 3.125em; }
+        body .layout footer .line section .social-networks .instagram .network-icon {
+          color: white;
+          font-size: 2em; } }
+
+@media (max-width: 576px) {
+  body .layout header .r-login {
+    margin: 0.625em 0;
+    margin-left: 4em;
+    padding: 0.625em 0; }
+    body .layout header .r-login .r-user-icon {
+      color: white;
+      font-size: 3rem; }
+  body .layout header .menu {
+    margin: 0.625em 1em;
+    padding: 0.625em 0; }
+    body .layout header .menu .menuButton {
+      color: white;
+      font-size: 3rem; }
+  body .layout .who article {
+    margin: 0;
+    padding: 1em; }
+    body .layout .who article p {
+      padding: 0 2em;
+      text-align: justify; }
+  body .layout main .proposals {
+    margin: 2em; }
+    body .layout main .proposals .mision {
+      margin: 1em;
+      padding: 2em; }
+    body .layout main .proposals .vision {
+      margin: 1em;
+      padding: 2em; } }
+
+@media (max-width: 484px) {
+  body .layout header .loppy-logo {
+    margin: 1em 0;
+    padding: 1em; }
+    body .layout header .loppy-logo img {
+      width: 7em; }
+  body .layout header .responsive-cont {
+    padding: 1em; }
+    body .layout header .responsive-cont .r-login {
+      display: initial; }
+      body .layout header .responsive-cont .r-login .r-user-icon {
+        color: white;
+        font-size: 2rem; }
+    body .layout header .responsive-cont .menu {
+      display: initial; }
+      body .layout header .responsive-cont .menu .menuButton {
+        color: white;
+        font-size: 2rem; }
+  body .layout main .proposals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em; }
+    body .layout main .proposals .mision {
+      margin: 1em;
+      padding: 2em; }
+    body .layout main .proposals .vision {
+      margin: 1em;
+      padding: 2em; }
+    body .layout main .proposals p {
+      text-align: justify; }
+  body .layout footer .line section h3 {
+    text-align: center;
+    font-size: 1.8em; }
+  body .layout footer .line section .social-networks {
+    justify-content: center;
+    flex-wrap: wrap; }
+    body .layout footer .line section .social-networks .facebook {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 2em; }
+      body .layout footer .line section .social-networks .facebook .network-icon {
+        color: white;
+        font-size: 2em; }
+    body .layout footer .line section .social-networks .twitter {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 2em; }
+      body .layout footer .line section .social-networks .twitter .network-icon {
+        color: white;
+        font-size: 2em; }
+    body .layout footer .line section .social-networks .youtube {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 2em; }
+      body .layout footer .line section .social-networks .youtube .network-icon {
+        color: white;
+        font-size: 2em; }
+    body .layout footer .line section .social-networks .instagram {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 2em; }
+      body .layout footer .line section .social-networks .instagram .network-icon {
+        color: white;
+        font-size: 2em; } }
+
+@media (max-width: 280px) {
+  body .layout footer .line .about-us h3 {
+    margin: 1em 0; }
+  body .layout footer .line .about-us ul li {
+    padding: 0.125em; }
+    body .layout footer .line .about-us ul li a {
+      font-size: 1em; }
+  body .layout footer .line .social-networks {
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    body .layout footer .line .social-networks .facebook {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 1em; }
+      body .layout footer .line .social-networks .facebook .network-icon {
+        color: white;
+        font-size: 1em; }
+    body .layout footer .line .social-networks .twitter {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 1em; }
+      body .layout footer .line .social-networks .twitter .network-icon {
+        color: white;
+        font-size: 1em; }
+    body .layout footer .line .social-networks .youtube {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 1em; }
+      body .layout footer .line .social-networks .youtube .network-icon {
+        color: white;
+        font-size: 1em; }
+    body .layout footer .line .social-networks .instagram {
+      background: #2A3847;
+      border-radius: 0.3125em;
+      margin: 1em;
+      padding: 1em; }
+      body .layout footer .line .social-networks .instagram .network-icon {
+        color: white;
+        font-size: 1em; } }

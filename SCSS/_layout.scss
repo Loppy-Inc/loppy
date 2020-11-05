@@ -1,0 +1,20 @@
+body {
+    background: #D0C7B8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.layout {
+    display: grid;
+    grid-template-areas: 
+    'header         header          header'
+    'main           main            main'
+    'service        service         service'
+    'subscription   subscription    subscription'
+    'footer         footer          footer';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+    // margin: 1.25em auto;
+    min-width: 20%;
+    // width: 95%;
+}

@@ -1,0 +1,35 @@
+.subscription {
+    background: #AFB5B3;
+    grid-area: subscription;
+    form {
+        margin: 1.25em auto;
+        padding: 0 1.25em;
+        width: 50%;
+        h3 {
+            color: white;
+            font-size: 2em;
+            text-align: center;
+        }
+        .keep-me-update {
+            margin: 0 auto;
+            input[type="email"] {
+                border: 1px solid #CCC;
+                border-radius: 2px;
+                margin: 0.625em;
+                padding: 0.625em;
+                outline: none;
+                width: 65%;
+            }
+            input[type="submit"] {
+                background:#3C5166;
+                border: none;
+                border-radius: 2px;
+                color: white;
+                cursor: pointer;
+                margin: 0.625em;
+                padding: 0.625em;
+                width: 20%;
+            }
+        }
+    }
+}

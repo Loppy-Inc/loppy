@@ -1,0 +1,106 @@
+$primary-color: #3C5166;
+
+.service {
+    grid-area: service;
+    .our-service {
+        // border: 0.3125em dashed $primary-color;
+        margin: 0.625em 0;
+        article {
+            margin: 0 3.125em;
+            text-align: center;
+            h3 {
+                color: $primary-color;
+                font-size: 2.625em;
+                margin: 0.625rem 0;
+                text-align: center;
+            }
+            blockquote {
+                color: white;
+                font-weight: 300;
+                font-style: oblique;
+            }
+            span {
+                color: white;
+                font-weight: 300;
+                font-style: oblique;
+            }
+        }
+        .description {
+            margin: 0 7.5em;
+            p {
+                color: #3C5166;
+                font-size: 1.125em;
+                font-weight: 500;
+                line-height: 1.5em;
+                padding: 1.25rem 5rem;
+            }
+        }
+        .features {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 1.25em;
+            .easy-to-use {
+                margin: 0 3.125em;
+                width: 15.625em;
+                .elipse {
+                    background: $primary-color;
+                    border-radius: 15.625em;
+                    height: 15.625em;
+                    width: 15.625em;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        padding: 2.8125em;
+                        width: 10em;
+                    }
+                }
+            }  
+            .safe {
+                margin: 0 3.125em;
+                width: 15.625em;
+                .elipse {
+                    background: $primary-color;
+                    border-radius: 15.625em;
+                    height: 15.625em;
+                    width: 15.625em;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        padding: 2.8125em;
+                        width: 10em;
+                    }
+                }
+            }
+            .modern {
+                margin: 0 3.125em;
+                width: 15.625em;
+                .elipse {
+                    background: $primary-color;
+                    border-radius: 15.625em;
+                    height: 15.625em;
+                    width: 15.625em;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        padding: 2.8125em;
+                        width: 10em;
+                    }
+                }
+            }
+            h3 {
+                color: $primary-color;
+                font-size: 1.5em;
+                margin: 0.625rem 0;
+                text-align: center;
+            }
+            p {
+                color: white;
+                font-weight: 300;
+                text-align: center;
+                padding: 0 0.625em;
+                line-height: 1.6875em;
+            }
+        }
+    }
+}

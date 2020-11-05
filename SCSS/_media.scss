@@ -1,0 +1,455 @@
+@media (max-width: 1265px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1053px) {
+    body {
+        font-size: 12px;
+        .layout {
+            grid-template-areas: 
+            'header         header          header'
+            'main           main            main'
+            'service        service         service'
+            'subscription   subscription    subscription'
+            'footer         footer          footer';
+            .service {
+                .our-service {
+                    .features {
+                        flex-direction: column;
+                        align-items: center;
+                    }   
+                }
+            }
+            footer {
+                .line {
+                    flex-flow: column-reverse;
+                    .about-us {
+                        margin: 0 auto;
+                        h3 {
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                        ul {
+                            display: flex;
+                            flex-direction: row;
+                            padding: 0;
+                            li {
+                                padding: 0 1.25em;
+                            }
+                        }
+                    }
+                    section {
+                        .social-networks {
+                            margin: 0 auto; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 932px) {
+    body {
+        font-size: 10px;
+        .layout {
+            header {
+                justify-content: space-between;
+                .loppy-logo {
+                    margin: 1em 0;
+                    img {
+                        width: 8.75em;
+                    }
+                }
+                nav {
+                    background: #3C5166;
+                    display: none;
+                    height: 100%;
+                    margin: 0;
+                    position: fixed;
+                    width: 50%;
+                    li {
+                        margin: 1.5em;
+                        a {
+                            i {
+                                display: none;
+                            }
+                        }
+                    }
+                    & > ul {
+                        flex-direction: column;
+                        width: 100%;
+                        & > li {
+                            padding: 1em;
+                        }
+                        & > li:hover {
+                            background: rgba(20, 22, 24, 0.60)
+                        }
+                    }
+                }
+                .login {
+                    display: none;
+                }
+                .responsive-cont {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .r-login {
+                        display: initial;
+                        .r-user-icon {
+                            color: white;
+                            font-size: 3rem;
+                        }
+                    }
+                    .menu {
+                        display: initial;
+                        .menuButton {
+                            color: white;
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+            main {
+                flex-flow: column-reverse;
+                h1 {
+                    margin: 1.25em;
+                    padding: 0;
+                }
+                .container-promotion {
+                    margin: 0 auto;
+                    margin-bottom: 3.75em;
+                }
+            }
+            .service {
+                .our-service {
+                    article {
+                        h3 {
+                            font-size: 2em;
+                        }
+                    }
+                    .description {
+                        display: none;
+                    }
+                }
+            }
+            .subscription {
+                form {
+                    margin: 1.25rem auto;
+                    width: 60%;
+                    .keep-me-update {
+                        margin: 1.875em auto;
+                        h3 {
+                            font-size: 1em;
+                        }
+                        input[type="email"] {
+                            border: 1px solid #CCC;
+                            border-radius: 2px;
+                            margin: 0.625rem;
+                            padding: 0.625rem;
+                            outline: none;
+                            width: 60%;
+                        }
+                        input[type="submit"] {
+                            background:#3C5166;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            cursor: pointer;
+                            margin: 0.625rem;
+                            padding: 0.625rem;
+                            width: 20%;
+                        }
+                    }
+                }
+            }
+            footer {
+                .line {
+                    section {
+                        .social-networks {
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            .facebook {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 0.625em 3.125em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                            .twitter {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 0.625em 3.125em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                            .youtube {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 0.625em 3.125em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                            .instagram {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 0.625em 3.125em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        .layout {
+            header {
+                .r-login {
+                    margin: 0.625em 0;
+                    margin-left: 4em;
+                    padding: 0.625em 0;
+                    .r-user-icon {
+                        color: white;
+                        font-size: 3rem;
+                    }
+                }
+                .menu {
+                    margin: 0.625em 1em;
+                    padding: 0.625em 0;
+                    .menuButton {
+                        color: white;
+                        font-size: 3rem;
+                    }
+                }
+            }
+            .subscription {
+                form {
+                    margin: 1.25rem auto;
+                    width: 80%;
+                    .keep-me-update {
+                        margin: 1.875em auto;
+                        input[type="email"] {
+                            border: 1px solid #CCC;
+                            border-radius: 2px;
+                            margin: 0.625em;
+                            padding: 0.625em;
+                            outline: none;
+                            width: 50%;
+                        }
+                        input[type="submit"] {
+                            background:#3C5166;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            cursor: pointer;
+                            margin: 0.625em;
+                            padding: 0.625em;
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 484px) {
+    body {
+        .layout {
+            header {
+                .loppy-logo {
+                    margin: 1em 0;
+                    padding: 1em;
+                    img {
+                        width: 7em;
+                    }
+                }
+                .responsive-cont {
+                    padding: 1em;
+                    .r-login {
+                        display: initial;
+                        .r-user-icon {
+                            color: white;
+                            font-size: 2rem;
+                        }
+                    }
+                    .menu {
+                        display: initial;
+                        .menuButton {
+                            color: white;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+            }
+            .subscription {
+                form {
+                    margin: 1.25rem auto;
+                    width: 100%;
+                    .keep-me-update {
+                        margin: 1.875em auto;
+                        input[type="email"] {
+                            border: 1px solid #CCC;
+                            border-radius: 2px;
+                            margin: 0.625em;
+                            padding: 0.625em;
+                            outline: none;
+                            width: 50%;
+                        }
+                        input[type="submit"] {
+                            background:#3C5166;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            cursor: pointer;
+                            margin: 0.625em;
+                            padding: 0.625em;
+                            width: 30%;
+                        }
+                    }
+                }
+            }
+            footer {
+                .line {
+                    section {
+                        h3 {
+                            text-align: center;
+                            font-size: 1.8em;
+                        } 
+                        .social-networks {
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            .facebook {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 2em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                            .twitter {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 2em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                            .youtube {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 2em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                            .instagram {
+                                background: $socialNetwork;
+                                border-radius: 0.3125em;
+                                margin: 1em;
+                                padding: 2em;
+                                .network-icon {
+                                    color: white;
+                                    font-size: 2em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 280px) {
+    body {
+        .layout {
+            footer {
+                .line {
+                    .about-us {
+                        h3 {
+                            margin: 1em 0;
+                        }
+                        ul {
+                            li {
+                                padding: 0.125em;
+                                a {
+                                    font-size: 1em;
+                                }
+                            }
+                        }
+                    }
+                    .social-networks {
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        .facebook {
+                            background: $socialNetwork;
+                            border-radius: 0.3125em;
+                            margin: 1em;
+                            padding: 1em;
+                            .network-icon {
+                                color: white;
+                                font-size: 1em;
+                            }
+                        }
+                        .twitter {
+                            background: $socialNetwork;
+                            border-radius: 0.3125em;
+                            margin: 1em;
+                            padding: 1em;
+                            .network-icon {
+                                color: white;
+                                font-size: 1em;
+                            }
+                        }
+                        .youtube {
+                            background: $socialNetwork;
+                            border-radius: 0.3125em;
+                            margin: 1em;
+                            padding: 1em;
+                            .network-icon {
+                                color: white;
+                                font-size: 1em;
+                            }
+                        }
+                        .instagram {
+                            background: $socialNetwork;
+                            border-radius: 0.3125em;
+                            margin: 1em;
+                            padding: 1em;
+                            .network-icon {
+                                color: white;
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

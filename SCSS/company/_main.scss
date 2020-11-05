@@ -1,0 +1,39 @@
+main {
+    grid-area: main;
+    .proposals {
+        margin: 5em;
+        overflow: hidden;
+        .mision {
+            background: rgba(0, 0, 0, 0.40);
+            color: white;
+            margin: 3em 0;
+            float: right;
+            padding: 3em;
+            text-align: center;
+            width: 50%;
+            h3 {
+                font-size: 3em;
+                font-weight: 400;
+            }
+            p {
+                font-size: 1.5em;
+            }
+        }
+        .vision {
+            background: rgba(0, 0, 0, 0.40);
+            color: white;
+            margin: 3em 0;
+            float: left;
+            padding: 3em;
+            text-align: center;
+            width: 50%;
+            h3 {
+                font-size: 3em;
+                font-weight: 400;
+            }
+            p {
+                font-size: 1.5em;
+            }
+        }
+    }
+}

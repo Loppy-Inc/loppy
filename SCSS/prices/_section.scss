@@ -1,0 +1,79 @@
+section {
+    grid-area: section;
+    .container-features {
+        margin: 5em;
+        .grid-features {
+            display: grid;
+            gap: 1.25em;
+            grid-template-areas:
+            'features-t features-t features-standard-t features-premium-t features-business-t'
+            'features   features   standard-features   premium-features   business-features';
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, auto);
+            .features-t {
+                grid-area: features-t;
+                color: white;
+                font-size: 2em;
+                text-align: center;    
+            }
+            .features-standard-t {
+                grid-area: features-standard-t;
+                color: white;
+                font-size: 2em;
+                text-align: center;
+            }
+            .features-premium-t {
+                grid-area: features-premium-t;
+                color: white;
+                font-size: 2em;
+                text-align: center;
+            }
+            .features-business-t {
+                grid-area: features-business-t;
+                color: white;
+                font-size: 2em;
+                text-align: center;
+            }
+            .features {
+                grid-area: features;
+                background: #AFB5B3;
+                & > p {
+                    color: white;
+                    font-weight: 400;
+                    padding: 1em;
+                    text-align: center;
+                }
+            }
+            .standard-features {
+                grid-area: standard-features;
+                background: rgba(255, 255, 255, 0.30);
+                & > p {
+                    color: #3C5166;
+                    font-weight: 400;
+                    padding: 1em;
+                    text-align: center;
+                }
+            }
+            .premium-features {
+                grid-area: premium-features;
+                background: rgba(0, 0, 0, 0.30);
+                & > p {
+                    color: #3C5166;
+                    font-weight: 400;
+                    padding: 1em;
+                    text-align: center;
+                }
+            }
+            .business-features {
+                grid-area: business-features;
+                background: rgba(255, 255, 255, 0.30);
+                & > p {
+                    color: #3C5166;
+                    font-weight: 400;
+                    padding: 1em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

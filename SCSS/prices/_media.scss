@@ -11,15 +11,38 @@
             grid-template-areas: 
             'header         header          header'
             'main           main            main'
-            'service        service         service'
-            'subscription   subscription    subscription'
+            'section        section         section'
             'footer         footer          footer';
-            .service {
-                .our-service {
-                    .features {
-                        flex-direction: column;
-                        align-items: center;
-                    }   
+            section {
+                .container-features {
+                    margin: 3em;
+                    .grid-features {
+                        grid-template-areas:
+                        'features-t features-t features-standard-t features-premium-t features-business-t'
+                        'features   features   standard-features   premium-features   business-features';
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-template-rows: repeat(2, auto);
+                        .features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .standard-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .premium-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .business-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                    }
                 }
             }
             footer {
@@ -123,59 +146,6 @@
                     }
                 }
             }
-            main {
-                flex-flow: column-reverse;
-                h1 {
-                    margin: 1.25em;
-                    padding: 0;
-                }
-                .container-promotion {
-                    margin: 0 auto;
-                    margin-bottom: 3.75em;
-                }
-            }
-            .service {
-                .our-service {
-                    article {
-                        h3 {
-                            font-size: 2em;
-                        }
-                    }
-                    .description {
-                        display: none;
-                    }
-                }
-            }
-            .subscription {
-                form {
-                    margin: 1.25rem auto;
-                    width: 60%;
-                    .keep-me-update {
-                        margin: 1.875em auto;
-                        h3 {
-                            font-size: 1em;
-                        }
-                        input[type="email"] {
-                            border: 1px solid #CCC;
-                            border-radius: 2px;
-                            margin: 0.625rem;
-                            padding: 0.625rem;
-                            outline: none;
-                            width: 60%;
-                        }
-                        input[type="submit"] {
-                            background:#3C5166;
-                            border: none;
-                            border-radius: 2px;
-                            color: white;
-                            cursor: pointer;
-                            margin: 0.625rem;
-                            padding: 0.625rem;
-                            width: 20%;
-                        }
-                    }
-                }
-            }
             footer {
                 .line {
                     section {
@@ -230,6 +200,147 @@
     }
 }
 
+@media (max-width: 806) {
+    body {
+        .layout {
+            section {
+                .container-features {
+                    margin: 2em;
+                    .grid-features {
+                        .features-t {
+                            font-size: 1.5em;   
+                        }
+                        .features-standard-t {
+                            font-size: 1.5em;   
+                        }
+                        .features-premium-t {
+                            font-size: 1.5em;   
+                        }
+                        .features-business-t {
+                            font-size: 1.5em;   
+                        }
+                        .features {
+                            & > p {
+                                padding: 0.5em;
+                            }
+                        }
+                        .standard-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .premium-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .business-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 679px) {
+    body {
+        .layout {
+            main {
+                background:  rgba(255, 255, 255, 0.30);
+                h1 {
+                    font-size: 4em;
+                }
+                .plans {
+                    flex-direction: column;
+                    align-items: stretch;
+                    .standard {
+                        margin: 2em;
+                        padding: 2em;
+                        h3 {
+                            font-size: 2em;
+                        }
+                        .price {
+                            border: none;
+                            font-size: 2em;
+                            font-weight: 300;
+                            margin: 0 1em;
+                            padding: 0;
+                            text-align: center;
+                        }
+                        a {
+                            border: 2px solid #3C5166;
+                            border-radius: 2.1875em;
+                            color: #3C5166;
+                            cursor: pointer;
+                            margin: 5em;
+                            padding: 0.9375em;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }
+                    .premium {
+                        background: #3C5166;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 2em;
+                        padding: 2em;
+                        h3 {
+                            font-size: 2em;
+                        }
+                        .price {
+                            border: none;
+                            font-size: 2em;
+                            font-weight: 300;
+                            margin: 0 1em;
+                            padding: 0;
+                            text-align: center;
+                        }
+                        a {
+                            border: 2px solid #D0C7B8;
+                            border-radius: 2.1875em;
+                            color: #D0C7B8;
+                            cursor: pointer;
+                            margin: 5em;
+                            padding: 0.9375em;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }
+                    .business {
+                        margin: 2em;
+                        padding: 2em;
+                        h3 {
+                            font-size: 2em;
+                        }
+                        .price {
+                            border: none;
+                            font-size: 2em;
+                            font-weight: 300;
+                            margin: 0 1em;
+                            padding: 0;
+                            text-align: center;
+                        }
+                        a {
+                            border: 2px solid #3C5166;
+                            border-radius: 2.1875em;
+                            color: #3C5166;
+                            cursor: pointer;
+                            margin: 5em;
+                            padding: 0.9375em;
+                            text-decoration: none;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 576px) {
     body {
         .layout {
@@ -252,29 +363,47 @@
                     }
                 }
             }
-            .subscription {
-                form {
-                    margin: 1.25rem auto;
-                    width: 60%;
-                    .keep-me-update {
-                        margin: 1.875em auto;
-                        input[type="email"] {
-                            border: 1px solid #CCC;
-                            border-radius: 2px;
-                            margin: 0.625em;
-                            padding: 0.625em;
-                            outline: none;
-                            width: 50%;
+            section {
+                .container-features {
+                    margin: 2em;
+                    .grid-features {
+                        gap: 1em;
+                        grid-template-areas:
+                        'features-t features-standard-t features-premium-t features-business-t'
+                        'features   standard-features   premium-features   business-features';
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: repeat(2, auto);
+                        .features-t {
+                            font-size: 1em;  
                         }
-                        input[type="submit"] {
-                            background:#3C5166;
-                            border: none;
-                            border-radius: 2px;
-                            color: white;
-                            cursor: pointer;
-                            margin: 0.625em;
-                            padding: 0.625em;
-                            width: 30%;
+                        .features-standard-t {
+                            font-size: 1em;
+                        }
+                        .features-premium-t {
+                            font-size: 1em;
+                        }
+                        .features-business-t {
+                            font-size: 1em;
+                        }
+                        .features {
+                            & > p {
+                                padding: 0.5em;
+                            }
+                        }
+                        .standard-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .premium-features {
+                            & > p {
+                                padding: 1em;
+                            }
+                        }
+                        .business-features {
+                            & > p {
+                                padding: 1em;
+                            }
                         }
                     }
                 }
@@ -366,29 +495,47 @@
                     }
                 }
             }
-            .subscription {
-                form {
-                    margin: 1.25rem auto;
-                    width: 80%;
-                    .keep-me-update {
-                        margin: 1.875em auto;
-                        input[type="email"] {
-                            border: 1px solid #CCC;
-                            border-radius: 2px;
-                            margin: 0.625em;
-                            padding: 0.625em;
-                            outline: none;
-                            width: 50%;
+            section {
+                .container-features {
+                    margin: 2em;
+                    .grid-features {
+                        gap: 1em;
+                        grid-template-areas:
+                        'features-t features-standard-t features-premium-t features-business-t'
+                        'features   standard-features   premium-features   business-features';
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: repeat(2, auto);
+                        .features-t {
+                            font-size: 1em;  
                         }
-                        input[type="submit"] {
-                            background:#3C5166;
-                            border: none;
-                            border-radius: 2px;
-                            color: white;
-                            cursor: pointer;
-                            margin: 0.625em;
-                            padding: 0.625em;
-                            width: 30%;
+                        .features-standard-t {
+                            font-size: 1em;
+                        }
+                        .features-premium-t {
+                            font-size: 1em;
+                        }
+                        .features-business-t {
+                            font-size: 1em;
+                        }
+                        .features {
+                            & > p {
+                                padding: 0.5em;
+                            }
+                        }
+                        .standard-features {
+                            & > p {
+                                padding: 1.3em;
+                            }
+                        }
+                        .premium-features {
+                            & > p {
+                                padding: 1.3em;
+                            }
+                        }
+                        .business-features {
+                            & > p {
+                                padding: 1.3em;
+                            }
                         }
                     }
                 }
@@ -417,13 +564,14 @@
                     }
                     .social-networks {
                         justify-content: space-between;
+                        flex-wrap: wrap;
                         .facebook {
                             background: $socialNetwork;
                             border-radius: 0.3125em;
                             margin: 1em;
                             padding: 1em;
                             .network-icon {
-                                color: red;
+                                color: white;
                                 font-size: 1em;
                             }
                         }

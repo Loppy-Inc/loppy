@@ -1,0 +1,145 @@
+main {
+    background: url('../public/images/prices-thumb.jpg') no-repeat;
+    background-size: cover;
+    grid-area: main;
+    h1 {
+        color: white;
+        font-weight: 400;
+        margin: 1em;
+        text-align: center;
+    }
+    .plans {
+        display: flex;
+        justify-content: center;
+        margin: 2em;
+        .standard {
+            background: #D0C7B8;
+            display: flex;
+            flex-direction: column;
+            margin: 0 1em;
+            h3 {
+                color: #3C5166;
+                font-size: 1.5em;
+                font-weight: 300;
+                text-align: center;
+            }
+            .price {
+                border: none;
+                color: #3C5166;
+                font-size: 2em;
+                font-weight: 300;
+                margin: 0 1em;
+                padding: 0;
+                text-align: center;
+            }
+            p {
+                border: 0;
+                border-bottom: 2px solid #3C5166;
+                color: #3C5166;
+                font-size: 1em;
+                margin: 0 1em;
+                padding: 2em 2em 0 2em;
+                text-align: center;
+                .icon {
+                    margin: 0 5px 0 0;
+                } 
+            }
+            a {
+                border: 2px solid #3C5166;
+                border-radius: 2.1875em;
+                color: #3C5166;
+                cursor: pointer;
+                margin: 5em;
+                padding: 0.9375em;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+        .premium {
+            background: #3C5166;
+            display: flex;
+            flex-direction: column;
+            margin: 0 1em;
+            h3 {
+                color: #D0C7B8;
+                font-size: 1.5em;
+                font-weight: 300;
+                text-align: center;
+            }
+            .price {
+                border: none;
+                color: #D0C7B8;
+                font-size: 2em;
+                font-weight: 400;
+                margin: 0 1em;
+                padding: 0;
+                text-align: center;
+            }
+            p {
+                border: 0;
+                border-bottom: 2px solid #D0C7B8;
+                color: #D0C7B8;
+                font-size: 1em;
+                margin: 0 1em;
+                padding: 2em 2em 0 2em;
+                text-align: center;
+                .icon {
+                    margin: 0 5px 0 0;
+                } 
+            }
+            a {
+                border: 2px solid #D0C7B8;
+                border-radius: 35px;
+                color: #D0C7B8;
+                cursor: pointer;
+                margin: 5em;
+                padding: 0.9375em;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+        .business {
+            background: #D0C7B8;
+            display: flex;
+            flex-direction: column;
+            margin: 0 1em;
+            h3 {
+                color: #3C5166;
+                font-size: 1.5em;
+                font-weight: 300;
+                text-align: center;
+            }
+            .price {
+                border: none;
+                color: #3C5166;
+                font-size: 2em;
+                font-weight: 400;
+                margin: 0 1em;
+                padding: 0;
+                text-align: center;
+            }
+            p {
+                border: 0;
+                border-bottom: 2px solid #3C5166;
+                color: #3C5166;
+                font-size: 1em;
+                margin: 0 1em;
+                padding: 2em 2em 0 2em;
+                text-align: center;
+                .icon {
+                    margin: 0 5px 0 0;
+                } 
+            }
+            a {
+                border: 2px solid #3C5166;
+                border-radius: 35px;
+                color: #3C5166;
+                cursor: pointer;
+                margin: 5em;
+                padding: 0.9375em;
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+}

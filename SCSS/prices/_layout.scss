@@ -1,3 +1,5 @@
+// prices.html
+
 body {
     background: #D0C7B8;
     font-family: 'Roboto', sans-serif;
@@ -9,10 +11,9 @@ body {
     grid-template-areas: 
     'header         header          header'
     'main           main            main'
-    'service        service         service'
-    'subscription   subscription    subscription'
+    'section        section         section'
     'footer         footer          footer';
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(4, auto);
     min-width: 20%;
 }
